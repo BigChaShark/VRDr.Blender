@@ -21,7 +21,7 @@ namespace DefaultNamespace
                 case BTMenu.Red:
                 {
                     var GN = GeneratorManager.GN;
-                    if (GN.orderNum<=3)
+                    if (GN.orderNum<3)
                     {
                         GN.BTSelect[GN.orderNum] = "Red";
                         GN.orderNum += 1;
@@ -31,7 +31,7 @@ namespace DefaultNamespace
                 case BTMenu.Yellow:
                 {
                     var GN = GeneratorManager.GN;
-                    if (GN.orderNum<=3)
+                    if (GN.orderNum<3)
                     {
                         GN.BTSelect[GN.orderNum] = "Yellow";
                         GN.orderNum += 1;
@@ -41,7 +41,7 @@ namespace DefaultNamespace
                 case BTMenu.Blue:
                 {
                     var GN = GeneratorManager.GN;
-                    if (GN.orderNum<=3)
+                    if (GN.orderNum<3)
                     {
                         GN.BTSelect[GN.orderNum] = "Blue";
                         GN.orderNum += 1;
