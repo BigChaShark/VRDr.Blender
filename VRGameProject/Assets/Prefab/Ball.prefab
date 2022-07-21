@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 5698886794025830048}
   - component: {fileID: 5698886794025830051}
   - component: {fileID: 5698886794025830079}
-  - component: {fileID: -4781856080141384251}
+  - component: {fileID: 5698886794025830076}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Bomb
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5698886794025830050}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 075159ae97bfedc498a4a12d83962347, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-4781856080141384251
+--- !u!114 &5698886794025830076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

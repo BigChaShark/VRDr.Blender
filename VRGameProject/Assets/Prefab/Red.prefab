@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5196964683052794590}
   - component: {fileID: 7039464974973379658}
   - component: {fileID: 2892636162151356587}
+  - component: {fileID: -6128093747292254161}
   - component: {fileID: 3587977823102599644}
-  - component: {fileID: -5596134959967209764}
-  - component: {fileID: -3663677012309385958}
-  - component: {fileID: -4527558161528971116}
-  - component: {fileID: 7887870022655872931}
+  - component: {fileID: -2309791988334527674}
+  - component: {fileID: -1124728077177903060}
+  - component: {fileID: -8190786378479399542}
   m_Layer: 0
   m_Name: Red
   m_TagString: Bomb
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6973356987582275876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5509329, y: 0.7148123, z: 2.6005366}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,6 +88,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-6128093747292254161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6973356987582275876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb999a207304c4d4db177c83cdb291b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionType: 5
+  Damege: 5
+  ImpactRannge: 0
+  Objtime: 0
 --- !u!114 &3587977823102599644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,23 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2102b9700ba264a4baec4b23ebecd1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-5596134959967209764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6973356987582275876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c731000e3725b184096bc1ae4da83c11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potionType: 5
-  Damege: 5
-  ImpactRannge: 0
-  Objtime: 0
---- !u!54 &-3663677012309385958
+--- !u!54 &-2309791988334527674
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +132,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &-4527558161528971116
+--- !u!64 &-1124728077177903060
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +146,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7887870022655872931
+--- !u!114 &-8190786378479399542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
