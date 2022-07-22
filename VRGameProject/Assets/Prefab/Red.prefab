@@ -100,10 +100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb999a207304c4d4db177c83cdb291b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionType: 5
-  Damege: 5
+  potionType: 2
+  Damege: 10
   ImpactRannge: 0
-  Objtime: 0
+  speedReduce: 4
+  Objtime: 5
+  DMGTimeRate: 0.5
 --- !u!114 &3587977823102599644
 MonoBehaviour:
   m_ObjectHideFlags: 0

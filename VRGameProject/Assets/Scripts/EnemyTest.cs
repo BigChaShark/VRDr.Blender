@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour,IDamage
+public class EnemyTest : MonoBehaviour
 {
     private int hp = 10;
     public void IHit(int Damage)
@@ -15,17 +15,22 @@ public class Enemy : MonoBehaviour,IDamage
         }
     }
 
-    public void IPoison(int Damage)
+    public void IPoison(int Damage , int Speed)
     {
         
     }
 
-    public void IImpack(int Damage, int Range)
+    public void IImpack(int Damage, float Range)
     {
         
     }
 
-    public void IFreeze(int Damge)
+    public void IFreeze(int Speed)
+    {
+        
+    }
+
+    public void ReSpeed()
     {
         
     }

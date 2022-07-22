@@ -22,11 +22,16 @@ public class PotionManager : MonoBehaviour
     //
     [SerializeField] private int Damege;
     [SerializeField] private int ImpactRannge;
+    [SerializeField] private int speedReduce;
     [SerializeField] private float Objtime;
      private float time;
+     private bool isBroke;
+     private float DMGTime;
+     [SerializeField]private float DMGTimeRate;
     private void Start()
     {
         itHitZone = false;
+        isBroke = false;
     }
 
     private void Update()
@@ -34,6 +39,7 @@ public class PotionManager : MonoBehaviour
         if (itHitZone)
         {
             time += Time.deltaTime;
+            DMGTime += Time.deltaTime;
         }
         IsHit();
     }
@@ -61,11 +67,33 @@ public class PotionManager : MonoBehaviour
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
-                        IDmg.IPoison(Damege);
-                        if (time>=Objtime)
+                        if (isBroke == false & IDmg!=null)
                         {
-                            Destroy(gameObject);
+                            IDmg.IPoison(speedReduce);
+                            isBroke = true;
                         }
+
+                        if (DMGTime >= DMGTimeRate)
+                        {
+                            if (IDmg!=null)
+                            {
+                                IDmg.IHit(Damege);
+                            }
+                            DMGTime = 0;
+                        }
+                        
+                    }
+                    if (time>=Objtime)
+                    {
+                        foreach (var hit in rayHit)
+                        {
+                            var IDmg = hit.transform.GetComponent<IDamage>();
+                            if (IDmg!=null)
+                            {
+                                IDmg.ReSpeed();
+                            }
+                        }
+                        Destroy(gameObject);
                     }
                     break;
                 }
@@ -74,21 +102,36 @@ public class PotionManager : MonoBehaviour
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
-                        IDmg.IFreeze(Damege);
+                        if (isBroke==false & IDmg!=null)
+                        {
+                            IDmg.IFreeze(speedReduce);
+                            isBroke = true;
+                        }
+                    }
+                    if (time>=Objtime)
+                    {
+                        foreach (var hit in rayHit)
+                        {
+                            var IDmg = hit.transform.GetComponent<IDamage>();
+                            if (IDmg!=null)
+                            {
+                                IDmg.ReSpeed();
+                            }
+                        }
                         Destroy(gameObject);
                     }
                     break;
                 }
-                case Potion.Fire:
+                case Potion.Fire: //Fix The Condition
                 {
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
-                        IDmg.IPoison(Damege);
-                        if (time>=Objtime)
-                        {
-                            Destroy(gameObject);
-                        }
+                        IDmg.IPoison(speedReduce);
+                    }
+                    if (time>=Objtime)
+                    {
+                        Destroy(gameObject);
                     }
                     break;
                 }
@@ -105,9 +148,9 @@ public class PotionManager : MonoBehaviour
                         if (IDmg!=null)
                         {
                             IDmg.IHit(Damege);
-                            Destroy(gameObject);
                         }
                     }
+                    Destroy(gameObject);
                     break;
                 }
             }
