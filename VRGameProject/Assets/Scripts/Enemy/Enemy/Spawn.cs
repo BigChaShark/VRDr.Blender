@@ -44,12 +44,12 @@ public class Spawn : MonoBehaviour
             spawnRate += Time.deltaTime;
             SpawnPoint();
         }
-        if (timecount>=80 && timecount<=149)
+        if (timecount>=40&& timecount<=119)
         {
             spawnRate += Time.deltaTime;
             SpawnPoint1();
         } 
-        if (timecount>=180 && timecount<=260)
+        if (timecount>=120 && timecount<=200)
         {
             spawnRate += Time.deltaTime;
             SpawnPoint2();
@@ -67,7 +67,7 @@ public class Spawn : MonoBehaviour
 
     void SpawnPoint()
     {
-        if ( spawnRate >= 1.5f && numEnemies<20)
+        if ( spawnRate >= 1f && numEnemies<20)
         {
             spawnRate = 0;
             SpawnEnemy();
@@ -77,7 +77,7 @@ public class Spawn : MonoBehaviour
     }
     void SpawnPoint1()
     {
-        if ( spawnRate >= 1.5f && numEnemies<30)
+        if ( spawnRate >= 1f && numEnemies<30)
         {
             spawnRate = 0;
             SpawnEnemy();
@@ -87,7 +87,7 @@ public class Spawn : MonoBehaviour
     }
     void SpawnPoint2()
     {
-        if ( spawnRate >= 1.5f && numEnemies<40)
+        if ( spawnRate >= 1f && numEnemies<40)
         {
             spawnRate = 0;
             SpawnEnemy();

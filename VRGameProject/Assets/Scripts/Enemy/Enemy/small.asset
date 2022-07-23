@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba47d6c5a9e807c4d9bcd896e6c817e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0618917a6b8b11647862d43680071660, type: 3}
   m_Name: small
   m_EditorClassIdentifier: 
-  hp: 500
-  speed: 5
-  damage: 0
+  hp: 10
+  speed: 3.2
+  damage: 5
