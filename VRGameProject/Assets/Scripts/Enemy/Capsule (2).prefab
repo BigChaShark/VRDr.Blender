@@ -128,6 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1e62fa2c28a1041b2aea14f9789d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 1
+  death: {fileID: 1174431269000276814, guid: 50a98d1a5044f324d82b4768d1009cff, type: 3}
   enemyType: {fileID: 11400000, guid: 091c88ec92ebd2f43ba4a5d288c7c0db, type: 2}
   target: {fileID: 566522158881125741, guid: cf859e0ac71b62147b9c98ace1babdd8, type: 3}
-  destroyLange: 5
+  destroyRange: 20
