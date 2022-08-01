@@ -19,19 +19,25 @@ public class PotionManager : MonoBehaviour
     private bool ishit;
     private int bitMask;
     public Potion potionType;
-    //
+    //Ability
     [SerializeField] private int Damege;
     [SerializeField] private int ImpactRannge;
     [SerializeField] private int speedReduce;
     [SerializeField] private float Objtime;
-     private float time;
-     private bool isBroke;
-     private float DMGTime;
-     [SerializeField]private float DMGTimeRate;
+    private float time;
+    private bool isBroke;
+    private float DMGTime;
+    [SerializeField]private float DMGTimeRate;
+
+    [SerializeField] private float StatusTime;
+    //Wall
+    [SerializeField] private GameObject wall;
+    [SerializeField] private float Range;
     private void Start()
     {
         itHitZone = false;
         isBroke = false;
+        wall.SetActive(false);
     }
 
     private void Update()
@@ -49,7 +55,7 @@ public class PotionManager : MonoBehaviour
         if (itHitZone)
         {
             bitMask = ~(1<<0)|~(1<<1)|~(1<<2)|(1<<3)|~(1<<4)|~(1<<5);
-            rayHit = Physics.SphereCastAll(transform.position,100f,transform.forward,100f,bitMask);
+            rayHit = Physics.SphereCastAll(transform.position,Range,transform.forward,Range,bitMask);
             switch (potionType)
             {
                 case Potion.Impact:
@@ -57,8 +63,11 @@ public class PotionManager : MonoBehaviour
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
-                        IDmg.IImpack(Damege,ImpactRannge);
-                        Destroy(gameObject);
+                        if (IDmg!=null)
+                        {
+                            IDmg.IImpack(Damege,ImpactRannge);
+                            Destroy(gameObject);
+                        }
                     }
                     break;
                 }
@@ -104,6 +113,7 @@ public class PotionManager : MonoBehaviour
                         var IDmg = hit.transform.GetComponent<IDamage>();
                         if (isBroke==false & IDmg!=null)
                         {
+                            IDmg.IHit(Damege);
                             IDmg.IFreeze(speedReduce);
                             isBroke = true;
                         }
@@ -127,17 +137,22 @@ public class PotionManager : MonoBehaviour
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
-                        IDmg.IPoison(speedReduce);
+                        if (IDmg!=null)
+                        {
+                            IDmg.IFire(Damege,DMGTimeRate,StatusTime);
+                        }
                     }
-                    if (time>=Objtime)
-                    {
-                        Destroy(gameObject);
-                    }
+                    Destroy(gameObject);
                     break;
                 }
                 case Potion.Wall:
                 {
-                    
+                    wall.transform.rotation = Quaternion.identity;
+                    wall.SetActive(true);
+                    if (time>=Objtime)
+                    {
+                        Destroy(gameObject);
+                    }
                     break;
                 }
                 case Potion.Bomb:

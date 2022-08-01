@@ -7,5 +7,6 @@
         public void ReSpeed();
         public void IImpack(int Damage,float Range);
         public void IFreeze(int Speed);
+        public void IFire(int Damage, float DMGTime,float STSTime);
     }
 }
