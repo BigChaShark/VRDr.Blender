@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionType: 5
   Damege: 9
-  ImpactRannge: 300
+  ImpactRannge: 0
   speedReduce: 0
   Objtime: 0
   DMGTimeRate: 0

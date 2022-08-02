@@ -69,7 +69,11 @@ public class Grab : MonoBehaviour
         }
         selectedObj.transform.SetParent(holdObject);
         var k = selectedObj.GetComponent<IsGrab>();
-        k.isGrab();
+        if (k != null)
+        {
+            k.isGrab();
+        }
+       
         selectedObj.transform.localPosition=Vector3.zero;
         var rigid = selectedObj.GetComponent<Rigidbody>();
         rigid.isKinematic = true;
@@ -82,7 +86,11 @@ public class Grab : MonoBehaviour
         }
         selectedObj.transform.SetParent(null);
         var k = selectedObj.GetComponent<IsGrab>();
-        k.isNonGrab();
+        if (k != null)
+        {
+            k.isNonGrab();
+        }
+       
         var rigid = selectedObj.GetComponent<Rigidbody>();
         rigid.isKinematic = false;
         rigid.velocity = forceDir*forcePower;

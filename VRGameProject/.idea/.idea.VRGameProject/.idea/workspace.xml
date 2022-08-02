@@ -19,7 +19,268 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f56ae175-5a76-48e6-86e3-6c5d0498bc87" name="Changes" comment="" />
+    <list default="true" id="f56ae175-5a76-48e6-86e3-6c5d0498bc87" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGameProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGameProject/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGameProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BallSetting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BallSetting/Ball.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BallSetting/Ball.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Balls_Effect.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement/Prefab/OVRCameraRig.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement/Prefab/OVRCameraRig.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Nebula Aqua-Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Nebula Aqua-Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Nebula Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Nebula Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Nebula Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Nebula Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Stars Small_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Stars Small_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Stars-Big_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Stars-Big_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Using Stardust to Create an Energy Wave Effect.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DinV/Dynamic Space Background/Sprites/Using Stardust to Create an Energy Wave Effect.jfif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Map_Hosp1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Map_Hosp1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Map_Hosp1Settings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Map_Hosp1Settings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/M_BedBedding.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/M_BedBedding.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Bed_Metal_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Bed_Metal_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Bed_Metal_01s.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Bed_Metal_01s.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Door_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Door_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Door_01_G.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Door_01_G.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Lamp.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Lamp.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Lamp_Off.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Lamp_Off.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Med_box_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Med_box_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Tile01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Tile01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Tile02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Tile02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Walllime01_C.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Walllime01_C.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Walllime02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Walllime02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_BedBedding_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_BedBedding_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Bed_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Bed_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Ceiling_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Ceiling_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Column_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Column_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Door_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Door_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Floor_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Floor_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Floor_02.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Floor_02.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Lamp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Lamp.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Med_box_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Med_box_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Module_DoorRoom_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Module_DoorRoom_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Module_DoorRoom_02.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Module_DoorRoom_02.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Wall_01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Wall_01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Wall_02.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Models/SM_Wall_02.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_BedBedding.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_BedBedding.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Bed_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Bed_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Ceiling_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Ceiling_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Column_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Column_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Door_01_.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Door_01_.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Door_01_Base.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Door_01_Base.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Floor_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Floor_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Floor_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Floor_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Lamp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Lamp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Med_box_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Med_box_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Module_DoorRoom_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Module_DoorRoom_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Module_DoorRoom_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Module_DoorRoom_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Wall_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Wall_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Wall_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Wall_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding_AO.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding_AO.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding_S.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_BedBedding_S.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_M.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_M.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_M.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_M.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_N.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_N.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Bed_Metal_01_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_A.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_A.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_G.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_G_N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_G_N.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_MR.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_MR.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Door_01_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp_E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp_E.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp_M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp_M.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp_N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Lamp_N.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Med_box_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Med_box_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Med_box_01_M.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Med_box_01_M.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Med_box_01_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Med_box_01_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile01_C.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile01_C.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile01_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile01_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile01_R.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile01_R.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile02_C.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile02_C.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile02_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile02_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile02_R.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile02_R.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile03.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile03.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile03_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Tile03_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime01_C.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime01_C.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime01_N.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime01_N.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime01_R.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime01_R.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime02_C.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime02_C.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime02_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dnk_Dev/HospitalHorrorPack/Textures/T_Walllime02_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Controller.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Controller.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Grid.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Grid.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Skybox Light.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Skybox Light.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerLeft.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerLeft.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerRight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerRight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerLeft.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerLeft.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerRight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerRight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Grid_Light_512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Grid_Light_512x512.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/1-welcome-screen-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/1-welcome-screen-image.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/project-header-vr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/project-header-vr.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialContainer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialContainer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialProjectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialStyle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialStyle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialWelcomePage.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialWelcomePage.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Potion/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Potion/Bomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Potion/Impact.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Potion/Impact.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ONSPSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ONSPSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OVRPlatformToolSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OVRPlatformToolSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TastDeathEffect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TastDeathEffect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyType/large.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyType/large.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyType/small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyType/small.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/Bomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/BombImpack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/BombImpack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/Icebomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/Icebomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/deathBig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/deathBig.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/deathMid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/deathMid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/deathsmall .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/deathsmall .prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/pison.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Partical/pison.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Spawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Spawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Capsule (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Capsule (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Capsule (2).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Capsule (2).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Capsule.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Capsule.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/prefab/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OtherScript/Grab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OtherScript/Grab.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_Ground 01b956af97c33fc3d7.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_Ground 01b956af97c33fc3d7.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_grassHR2 023d3aba195e4d26ee.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_grassHR2 023d3aba195e4d26ee.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_ground_kaminky23d3aba195e4d26ee.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_ground_kaminky23d3aba195e4d26ee.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_wrak_zedb956af97c33fc3d7.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_TerrainAutoUpgrade/layer_wrak_zedb956af97c33fc3d7.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +308,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/TastEffectObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Spawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Spawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/TargetDiraction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OtherScript/Grab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Animetion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -73,9 +339,8 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -83,9 +348,8 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -106,6 +370,8 @@
       <workItem from="1659014528747" duration="1475000" />
       <workItem from="1659338428169" duration="6600000" />
       <workItem from="1659420210984" duration="11821000" />
+      <workItem from="1659451295187" duration="9314000" />
+      <workItem from="1659461625649" duration="3215000" />
     </task>
     <servers />
   </component>
@@ -125,6 +391,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

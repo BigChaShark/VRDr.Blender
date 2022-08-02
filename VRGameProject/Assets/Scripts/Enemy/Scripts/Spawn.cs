@@ -14,13 +14,9 @@ namespace Enemy
         private GameObject[] enemyS;
         private Transform[]  spawnS;
         public float timecount;
-    
-        public float spawnTime;
-        public float spawnTime1;
-        public float spawnTime2;
+        
         public float spawnRate;
-        public float spawnRate2;
-        public float spawnRate3;
+       
         int numEnemies=0;
 
         public void Start()
