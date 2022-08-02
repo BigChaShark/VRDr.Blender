@@ -33,11 +33,13 @@ public class PotionManager : MonoBehaviour
     //Wall
     [SerializeField] private GameObject wall;
     [SerializeField] private float Range;
+    private Rigidbody rigi;
     private void Start()
     {
         itHitZone = false;
         isBroke = false;
         wall.SetActive(false);
+        rigi = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -48,6 +50,7 @@ public class PotionManager : MonoBehaviour
             DMGTime += Time.deltaTime;
         }
         IsHit();
+        
     }
 
     void IsHit()
@@ -65,10 +68,11 @@ public class PotionManager : MonoBehaviour
                         var IDmg = hit.transform.GetComponent<IDamage>();
                         if (IDmg!=null)
                         {
-                            IDmg.IImpack(Damege,ImpactRannge);
-                            Destroy(gameObject);
+                            IDmg.IHit(Damege);
+                            IDmg.IImpack(ImpactRannge);
                         }
                     }
+                    Destroy(gameObject);
                     break;
                 }
                 case Potion.Poison:
@@ -132,7 +136,7 @@ public class PotionManager : MonoBehaviour
                     }
                     break;
                 }
-                case Potion.Fire: //Fix The Condition
+                case Potion.Fire: 
                 {
                     foreach (var hit in rayHit)
                     {
@@ -162,6 +166,7 @@ public class PotionManager : MonoBehaviour
                         var IDmg = hit.transform.GetComponent<IDamage>();
                         if (IDmg!=null)
                         {
+                            IDmg.IImpack(ImpactRannge);
                             IDmg.IHit(Damege);
                         }
                     }
@@ -178,6 +183,7 @@ public class PotionManager : MonoBehaviour
         {
             itHitZone = true;
             Debug.Log("IsHit123");
+            rigi.constraints = RigidbodyConstraints.FreezePositionZ;
         }
     }
 }

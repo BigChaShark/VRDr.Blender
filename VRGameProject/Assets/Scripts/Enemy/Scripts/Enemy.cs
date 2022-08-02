@@ -55,9 +55,8 @@ namespace Enemy
             speed -= Speed;
         }
 
-        public void IImpack(int Damage,float Range)
+        public void IImpack(float Range)
         {
-            hp -= Damage;
             e_rigi.AddForce(transform.up*Range);
             e_rigi.AddForce(-transform.forward*Range*2);
         }

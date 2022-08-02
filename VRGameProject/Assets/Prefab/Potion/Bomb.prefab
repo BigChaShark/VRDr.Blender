@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7dbee94924712294f8495800ee8b4c86, type: 2}
+  - {fileID: 2100000, guid: a439cfb9369c1404d9db2e5580667b14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,14 +133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionType: 5
-  Damege: 10
-  ImpactRannge: 0
+  Damege: 9
+  ImpactRannge: 300
   speedReduce: 0
   Objtime: 0
   DMGTimeRate: 0
   StatusTime: 0
   wall: {fileID: 8452582541386422358}
-  Range: 100
+  Range: 10
 --- !u!114 &5294351649933242441
 MonoBehaviour:
   m_ObjectHideFlags: 0

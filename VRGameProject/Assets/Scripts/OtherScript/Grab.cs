@@ -51,13 +51,11 @@ public class Grab : MonoBehaviour
     {
         if (OVRInput.Get(inputActive) >= activethresold && !bIsActive)
         {
-            Debug.Log("ongrab");
             OnGrabObject();
             bIsActive = true;
         }
         else if (OVRInput.Get(inputActive) < activethresold && bIsActive)
         {
-            Debug.Log("onrelease");
             OnReleaseObject();
             bIsActive = false;
         }
@@ -69,7 +67,6 @@ public class Grab : MonoBehaviour
         {
             return;
         }
-        Debug.Log("ongrab");
         selectedObj.transform.SetParent(holdObject);
         var k = selectedObj.GetComponent<IsGrab>();
         k.isGrab();
@@ -83,7 +80,6 @@ public class Grab : MonoBehaviour
         {
             return;
         }
-        Debug.Log("lineman");
         selectedObj.transform.SetParent(null);
         var k = selectedObj.GetComponent<IsGrab>();
         k.isNonGrab();

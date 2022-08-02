@@ -37,7 +37,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delete.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OtherScript/Delete.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -105,6 +105,7 @@
       <workItem from="1659006200669" duration="3163000" />
       <workItem from="1659014528747" duration="1475000" />
       <workItem from="1659338428169" duration="6600000" />
+      <workItem from="1659420210984" duration="11821000" />
     </task>
     <servers />
   </component>

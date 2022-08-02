@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1387985136182353931}
   - component: {fileID: -4610871345621625084}
   m_Layer: 0
-  m_Name: Fire
+  m_Name: Poison
   m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7dbee94924712294f8495800ee8b4c86, type: 2}
+  - {fileID: 2100000, guid: 2512827267cc0da4a90ecb92fd35043b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -132,15 +132,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb999a207304c4d4db177c83cdb291b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionType: 3
+  potionType: 2
   Damege: 5
   ImpactRannge: 0
   speedReduce: 0
-  Objtime: 0
+  Objtime: 5
   DMGTimeRate: 2
-  StatusTime: 10
+  StatusTime: 0
   wall: {fileID: 8452582541386422358}
-  Range: 100
+  Range: 0
 --- !u!114 &5294351649933242441
 MonoBehaviour:
   m_ObjectHideFlags: 0

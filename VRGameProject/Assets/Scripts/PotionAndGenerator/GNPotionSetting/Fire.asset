@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0618917a6b8b11647862d43680071660, type: 3}
-  m_Name: small
+  m_Script: {fileID: 11500000, guid: b4b817816c97442d8e9a3a8f85658229, type: 3}
+  m_Name: Fire
   m_EditorClassIdentifier: 
-  hp: 100000
-  speed: 3.2
-  damage: 5
+  potion: {fileID: 9162749687524783743, guid: 203584dd4bd2bb44486cb73b10cc8e84, type: 3}
+  condition1: 0
+  condition2: 0
+  condition3: 0

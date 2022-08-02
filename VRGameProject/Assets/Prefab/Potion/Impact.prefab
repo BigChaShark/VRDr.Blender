@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7dbee94924712294f8495800ee8b4c86, type: 2}
+  - {fileID: 2100000, guid: d786d4ccd0847a64f80d21ee6b07874f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,7 +138,9 @@ MonoBehaviour:
   speedReduce: 0
   Objtime: 0
   DMGTimeRate: 0
+  StatusTime: 0
   wall: {fileID: 8452582541386422358}
+  Range: 20
 --- !u!114 &5294351649933242441
 MonoBehaviour:
   m_ObjectHideFlags: 0
