@@ -8,25 +8,24 @@ namespace Enemy.Scripts
 
         [Header("ViewDistant_SelfDestroy")] 
         private bool openDebug=false;
+        private bool enemyDeath;
         
         [Header("DeadEffect(particle System)")] 
         [SerializeField] private ParticleSystem death;
-        
         [SerializeField] private FileSo enemyType;
-         private Transform target;
-
-        private GameObject heeTarget;
         
-      
-        [SerializeField] private float destroyRange;
+        private Transform target;
+        private GameObject heeTarget;
         
         [Header("Enemy Status")]
         [SerializeField]private float speed;
         [SerializeField]private int hp;
-        private bool enemyDeath;
+        [SerializeField] private float destroyRange;
         private float fSpeed;
+        
         [Header("RigiBody")]
         [SerializeField]private Rigidbody e_rigi;
+        
         //Fire Method
         private int fireDMG;
         private float StatusTimeCount;
@@ -34,8 +33,10 @@ namespace Enemy.Scripts
         private float dmgFireTime;
         private float dmgFireTimeCount;
         private bool isFire = false;
+       
         //AnimetionBool
         public bool animwalk;
+        
         
         void Awake()
         {

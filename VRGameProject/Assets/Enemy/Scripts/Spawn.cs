@@ -4,20 +4,14 @@ namespace Enemy
 {
     public class Spawn : MonoBehaviour
     {
-        [SerializeField] private GameObject  enemy1;
-        [SerializeField] private GameObject  enemy2;
-        [SerializeField] private GameObject  enemy3;
-
-        [SerializeField] private Transform   spawn1;
-        [SerializeField] private Transform   spawn2;
-        [SerializeField] private Transform   spawn3;
+        [SerializeField] private GameObject  enemy1,enemy2,enemy3;
+        [SerializeField] private Transform   spawn1,spawn2,spawn3;
         private GameObject[] enemyS;
         private Transform[]  spawnS;
         public float timecount;
-        
         public float spawnRate;
-       
         int numEnemies=0;
+     
 
         public void Start()
         {
@@ -58,6 +52,7 @@ namespace Enemy
         {
         
             Instantiate(enemyS[UnityEngine.Random.Range(0,3)], spawnS[UnityEngine.Random.Range(0,3)].transform.position, Quaternion.identity);
+            
             numEnemies++;
         
         }
