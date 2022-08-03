@@ -12,11 +12,13 @@ namespace Enemy
         public float spawnRate;
         int numEnemies=0;
      
+        
 
         public void Start()
         {
             enemyS = new[] { enemy1, enemy2, enemy3 };
             spawnS = new[] { spawn1, spawn2, spawn3 };
+            Soundmanager.sM.Gamestart();
        
         }
 

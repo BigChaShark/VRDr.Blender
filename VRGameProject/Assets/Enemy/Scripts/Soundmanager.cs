@@ -12,11 +12,13 @@ public class Soundmanager : MonoBehaviour
     
     
     public bool gamestarT= false,backgrounD= false,switcH1= false,switcH2= false,switcH3= false,miX= false,clicK= false,throwPotion = false;
+    public static Soundmanager sM;
     void Start()
     {
-       
+        sM = this;
     }
 
+    
     
     void Update()
     {
@@ -56,7 +58,7 @@ public class Soundmanager : MonoBehaviour
     }
 
     
-    public void Gamestart()
+    public  void Gamestart()
     {
         _startSound.Play();
     }
