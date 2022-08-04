@@ -132,13 +132,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb999a207304c4d4db177c83cdb291b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleOn: {fileID: 1174431269000276814, guid: 4056164ac52f59042b53aba643fbfef7,
+    type: 3}
   potionType: 3
-  Damege: 5
+  Damege: 0
   ImpactRannge: 0
   speedReduce: 0
   Objtime: 0
   DMGTimeRate: 2
-  StatusTime: 10
+  StatusTime: 20
   wall: {fileID: 8452582541386422358}
   Range: 100
 --- !u!114 &5294351649933242441

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: small
   m_EditorClassIdentifier: 
   hp: 10
-  speed: 3.2
+  speed: 2
   damage: 5
+  score: 1

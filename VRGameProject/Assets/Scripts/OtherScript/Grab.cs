@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class Grab : MonoBehaviour
 {
-    public GameObject HandDRT;
+    //public GameObject HandDRT;
     private Vector3 forceDir;
+    private bool isGrabed;
+    private Transform fSelectDir;
     [SerializeField]private int forcePower;
     public OVRInput.Axis1D inputActive;
     public Transform holdObject;
@@ -16,14 +18,14 @@ public class Grab : MonoBehaviour
     public float activethresold;
     public bool bIsActive;
     public GameObject selectedObj;
-
-
     private Vector3 lastPosition;
+    
     void Update()
     {
         UpdateGrabObJ();
-        forceDir = this.transform.position - lastPosition;
-        lastPosition = this.transform.position;
+        forceDir = transform.position - lastPosition;
+        lastPosition = transform.position;
+        Debug.Log("x");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,11 +53,13 @@ public class Grab : MonoBehaviour
     {
         if (OVRInput.Get(inputActive) >= activethresold && !bIsActive)
         {
+            //Debug.Log("ongrab");
             OnGrabObject();
             bIsActive = true;
         }
         else if (OVRInput.Get(inputActive) < activethresold && bIsActive)
         {
+            //Debug.Log("onrelease");
             OnReleaseObject();
             bIsActive = false;
         }
@@ -67,16 +71,13 @@ public class Grab : MonoBehaviour
         {
             return;
         }
+        //Debug.Log("ongrab");
         selectedObj.transform.SetParent(holdObject);
-        var k = selectedObj.GetComponent<IsGrab>();
-        if (k != null)
-        {
-            k.isGrab();
-        }
-       
         selectedObj.transform.localPosition=Vector3.zero;
+        fSelectDir = selectedObj.transform;
         var rigid = selectedObj.GetComponent<Rigidbody>();
         rigid.isKinematic = true;
+        isGrabed = true;
     }
     public void OnReleaseObject()
     {
@@ -84,17 +85,16 @@ public class Grab : MonoBehaviour
         {
             return;
         }
+        //Debug.Log("lineman");
         selectedObj.transform.SetParent(null);
-        var k = selectedObj.GetComponent<IsGrab>();
-        if (k != null)
-        {
-            k.isNonGrab();
-        }
-       
         var rigid = selectedObj.GetComponent<Rigidbody>();
         rigid.isKinematic = false;
         rigid.velocity = forceDir*forcePower;
-
+        if (isGrabed)
+        {
+            Soundmanager.sM.OnThrow();
+            isGrabed = false;
+        }
     }
    
 }

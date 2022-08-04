@@ -9,5 +9,5 @@ public class FileSo : ScriptableObject
     public int hp;
     public float speed;
     public int damage;
-    
+    public int score;
 }

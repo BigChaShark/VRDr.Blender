@@ -9,7 +9,9 @@ namespace DefaultNamespace
             Red,
             Blue,
             Yellow,
-            Generate
+            Generate,
+            Start,
+            Restart
         }
 
         public BTMenu bTmenu;
@@ -20,6 +22,7 @@ namespace DefaultNamespace
             {
                 case BTMenu.Red:
                 {
+                    Soundmanager.sM.pushBotton1();
                     var GN = GeneratorManager.GN;
                     if (GN.orderNum<3)
                     {
@@ -36,6 +39,7 @@ namespace DefaultNamespace
                 }
                 case BTMenu.Yellow:
                 {
+                    Soundmanager.sM.pushBotton2();
                     var GN = GeneratorManager.GN;
                     if (GN.orderNum<3)
                     {
@@ -52,6 +56,7 @@ namespace DefaultNamespace
                 }
                 case BTMenu.Blue:
                 {
+                    Soundmanager.sM.pushBotton3();
                     var GN = GeneratorManager.GN;
                     if (GN.orderNum<3)
                     {
@@ -68,7 +73,20 @@ namespace DefaultNamespace
                 }
                 case BTMenu.Generate:
                 {
+                    Soundmanager.sM.MixPoiton();
                     GeneratorManager.GN.isGenerate = true;
+                    break;
+                }
+                case BTMenu.Start:
+                {
+                    Soundmanager.sM.Onclick();
+                    GameManager.game.isClickStart = true;
+                    break;
+                }
+                case BTMenu.Restart:
+                {
+                    GameManager.game.isClickReStart = true;
+                    Soundmanager.sM.Onclick();
                     break;
                 }
             }

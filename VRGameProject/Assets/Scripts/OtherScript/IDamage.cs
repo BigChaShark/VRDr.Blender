@@ -6,7 +6,7 @@
         public void IPoison(int Speed);
         public void ReSpeed();
         public void IImpack(float Range);
-        public void IFreeze(int Speed);
+        public void IFreeze(int Speed , int Damage);
         public void IFire(int Damage, float DMGTime,float STSTime);
     }
 }

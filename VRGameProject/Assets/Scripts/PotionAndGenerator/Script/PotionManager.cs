@@ -14,6 +14,8 @@ public class PotionManager : MonoBehaviour
         Wall,
         Bomb
     }
+
+    [SerializeField] private ParticleSystem _particleOn;
     private bool itHitZone;
     private RaycastHit[] rayHit;
     private bool ishit;
@@ -26,6 +28,7 @@ public class PotionManager : MonoBehaviour
     [SerializeField] private float Objtime;
     private float time;
     private bool isBroke;
+    private bool isGlassBroke;
     private float DMGTime;
     [SerializeField]private float DMGTimeRate;
 
@@ -36,6 +39,7 @@ public class PotionManager : MonoBehaviour
     private Rigidbody rigi;
     private void Start()
     {
+        isGlassBroke = false;
         itHitZone = false;
         isBroke = false;
         wall.SetActive(false);
@@ -50,7 +54,10 @@ public class PotionManager : MonoBehaviour
             DMGTime += Time.deltaTime;
         }
         IsHit();
-        
+        if (GameManager.game.isClickReStart)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void IsHit()
@@ -72,29 +79,38 @@ public class PotionManager : MonoBehaviour
                             IDmg.IImpack(ImpactRannge);
                         }
                     }
+                    Instantiate(_particleOn, transform.position, Quaternion.identity);
                     Destroy(gameObject);
                     break;
                 }
                 case Potion.Poison:
                 {
+                    if (isGlassBroke==false)
+                    {
+                        Instantiate(_particleOn, transform.position, Quaternion.identity);
+                        isGlassBroke = true;
+                    }
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
                         if (isBroke == false & IDmg!=null)
                         {
                             IDmg.IPoison(speedReduce);
-                            isBroke = true;
                         }
-
-                        if (DMGTime >= DMGTimeRate)
+                    }
+                    isBroke = true;
+                    if (DMGTime >= DMGTimeRate)
+                    {
+                        foreach (var hit in rayHit)
                         {
+                            var IDmg = hit.transform.GetComponent<IDamage>();
+                        
                             if (IDmg!=null)
                             {
                                 IDmg.IHit(Damege);
                             }
-                            DMGTime = 0;
                         }
-                        
+                        DMGTime = 0;
                     }
                     if (time>=Objtime)
                     {
@@ -112,16 +128,20 @@ public class PotionManager : MonoBehaviour
                 }
                 case Potion.Freeze:
                 {
+                    if (isGlassBroke==false)
+                    {
+                        Instantiate(_particleOn, transform.position, Quaternion.identity);
+                        isGlassBroke = true;
+                    }
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
                         if (isBroke==false & IDmg!=null)
                         {
-                            IDmg.IHit(Damege);
-                            IDmg.IFreeze(speedReduce);
-                            isBroke = true;
+                            IDmg.IFreeze(speedReduce,Damege);
                         }
                     }
+                    isBroke = true;
                     if (time>=Objtime)
                     {
                         foreach (var hit in rayHit)
@@ -138,6 +158,7 @@ public class PotionManager : MonoBehaviour
                 }
                 case Potion.Fire: 
                 {
+                    Instantiate(_particleOn, transform.position, Quaternion.identity);
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();
@@ -161,6 +182,7 @@ public class PotionManager : MonoBehaviour
                 }
                 case Potion.Bomb:
                 {
+                    Instantiate(_particleOn, transform.position, Quaternion.identity);
                     foreach (var hit in rayHit)
                     {
                         var IDmg = hit.transform.GetComponent<IDamage>();

@@ -42,35 +42,47 @@ namespace Enemy
         {
             enemyS = new[] { enemy1, enemy2, enemy3 };
             spawnS = new[] { spawn1, spawn2, spawn3 };
-            Soundmanager.sM.Gamestart();
-       
+            //Soundmanager.sM.Gamestart();
         }
 
-        public void FixedUpdate()
+        public void Update()
         {
-            timecount += Time.deltaTime;
-            Debug.Log($"{(int)timecount}Secon");
-            if (timecount>=start1 && timecount<=end1)
+            if (GameManager.game.isClickReStart)
             {
-                spawnRate += Time.deltaTime;
-                SpawnPoint();
+                Debug.Log("Is click Restart");
+                timecount = 0;
+                numEnemies = 0;
+                spawnRate = 0;
             }
-            if (timecount>=start2&& timecount<=end2)
+            if (GameManager.game.isClickStart)
             {
-                spawnRate += Time.deltaTime;
-                SpawnPoint1();
-            } 
-            if (timecount>=start3 && timecount<=end3)
-            {
-                spawnRate += Time.deltaTime;
-                SpawnPoint2();
+                timecount += Time.deltaTime;
+                //Debug.Log($"{(int)timecount}Secon");
+                if (timecount>=start1 && timecount<=end1)
+                {
+                    GameManager.game.wave = 1;
+                    spawnRate += Time.deltaTime;
+                    SpawnPoint();
+                }
+                if (timecount>=start2&& timecount<=end2)
+                {
+                    GameManager.game.wave = 2;
+                    spawnRate += Time.deltaTime;
+                    SpawnPoint1();
+                } 
+                if (timecount>=start3 && timecount<=end3)
+                {
+                    GameManager.game.wave = 3;
+                    spawnRate += Time.deltaTime;
+                    SpawnPoint2();
+                }
+                if (timecount>=start4 && timecount<=end4)
+                {
+                    GameManager.game.wave = 4;
+                    spawnRate += Time.deltaTime;
+                    SpawnPoint3();
+                }
             }
-            if (timecount>=start4 && timecount<=end4)
-            {
-                spawnRate += Time.deltaTime;
-                SpawnPoint3();
-            }
-        
         }
 
         void SpawnEnemy()
@@ -88,40 +100,31 @@ namespace Enemy
             {
                 spawnRate = 0;
                 SpawnEnemy();
-         
             }
-        
         }
         void SpawnPoint1()
         {
-            if ( spawnRate >= 1f && numEnemies<num2)
+            if ( spawnRate >= 1f && numEnemies<num2+num1)
             {
                 spawnRate = 0;
                 SpawnEnemy();
-         
             }
-        
         }
         void SpawnPoint2()
         {
-            if ( spawnRate >= 1f && numEnemies<num3)
+            if ( spawnRate >= 1f && numEnemies<num3+num1+num2)
             {
                 spawnRate = 0;
                 SpawnEnemy();
-         
             }
-        
         }
         void SpawnPoint3()
         {
-            if ( spawnRate >= 1f && numEnemies<num4)
+            if ( spawnRate >= 1f && numEnemies<num4+num1+num2+num3)
             {
                 spawnRate = 0;
                 SpawnEnemy();
-         
             }
-        
         }
-
     }
 }

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: mid
   m_EditorClassIdentifier: 
   hp: 20
-  speed: 2.3
+  speed: 2
   damage: 1
+  score: 1

@@ -80,7 +80,10 @@ public class GeneratorManager : MonoBehaviour
     void Update()
     {
         Potion();
-        
+        if (GameManager.game.isClickReStart)
+        {
+            SetPotion();
+        }
     }
     
     void Potion()
