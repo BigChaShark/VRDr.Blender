@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b817816c97442d8e9a3a8f85658229, type: 3}
   m_Name: Freeze
   m_EditorClassIdentifier: 
-  potion: {fileID: 9162749687524783743, guid: 37b7da8c9de02074f903927abc49ed5e, type: 3}
+  potion: {fileID: 3329309972811942146, guid: 84a1747705169434aa5b46dc939745c2, type: 3}
   condition1: 1
   condition2: 1
   condition3: 1

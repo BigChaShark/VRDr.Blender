@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b817816c97442d8e9a3a8f85658229, type: 3}
   m_Name: Impact
   m_EditorClassIdentifier: 
-  potion: {fileID: 9162749687524783743, guid: d47ac20bb2c6d3b4592872f89142c1ee, type: 3}
+  potion: {fileID: 6772063860414391505, guid: b5d9090225d7569479c27fae98cc6e43, type: 3}
   condition1: 1
   condition2: 1
   condition3: 0

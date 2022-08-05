@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b817816c97442d8e9a3a8f85658229, type: 3}
   m_Name: Bomb
   m_EditorClassIdentifier: 
-  potion: {fileID: 9162749687524783743, guid: 75733208e5a75794faf6e06b39b9c5ee, type: 3}
+  potion: {fileID: 6625921141091704176, guid: ed6e5d9236d349648a6264d1fcd4223b, type: 3}
   condition1: 2
   condition2: 2
   condition3: 2

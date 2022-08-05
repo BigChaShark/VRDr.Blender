@@ -11,7 +11,8 @@ namespace DefaultNamespace
             Yellow,
             Generate,
             Start,
-            Restart
+            Restart,
+            Menu
         }
 
         public BTMenu bTmenu;
@@ -79,13 +80,19 @@ namespace DefaultNamespace
                 }
                 case BTMenu.Start:
                 {
-                    Soundmanager.sM.Onclick();
+                    Soundmanager.sM.Gamestart();
                     GameManager.game.isClickStart = true;
                     break;
                 }
                 case BTMenu.Restart:
                 {
                     GameManager.game.isClickReStart = true;
+                    Soundmanager.sM.Onclick();
+                    break;
+                }
+                case BTMenu.Menu:
+                {
+                    GameManager.game.isClickReturnMenu = true;
                     Soundmanager.sM.Onclick();
                     break;
                 }

@@ -136,7 +136,7 @@ namespace Enemy.Scripts
             }
             if (hp<=0)
             {
-                GameManager.game.score += DeadScore;
+                GameManager.game.score += 1;
                 Destroy(gameObject);
             }
         }

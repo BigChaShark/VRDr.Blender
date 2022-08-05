@@ -89,9 +89,8 @@ namespace Enemy
         {
         
             Instantiate(enemyS[UnityEngine.Random.Range(0,3)], spawnS[UnityEngine.Random.Range(0,3)].transform.position, Quaternion.identity);
-            
             numEnemies++;
-        
+            GameManager.game.enemyCount += 1;
         }
 
         void SpawnPoint()
