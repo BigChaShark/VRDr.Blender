@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potion: {fileID: 6772063860414391505, guid: b5d9090225d7569479c27fae98cc6e43, type: 3}
   condition1: 1
-  condition2: 1
+  condition2: 2
   condition3: 0

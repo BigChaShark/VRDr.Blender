@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Wall
   m_EditorClassIdentifier: 
   potion: {fileID: 1539993436488954712, guid: 2d4da2bbbdac4e54f8235fd0c42eacac, type: 3}
-  condition1: 1
+  condition1: 0
   condition2: 2
-  condition3: 2
+  condition3: 1

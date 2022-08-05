@@ -168,7 +168,7 @@ namespace Enemy.Scripts
             isIce = true;
             hp -= Damage;
             rend.material = MatHitIce;
-            speed -= Speed;
+            speed = Speed;
         }
 
         public void IFire(int Damage , float DMGTime , float STSTime)

@@ -134,7 +134,7 @@ MonoBehaviour:
   DMGTimeRate: 0
   StatusTime: 0
   wall: {fileID: 4113624144133504206}
-  Range: 100
+  Range: 200
 --- !u!64 &1155014028506269076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -228,7 +228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8e8ac42482e9e2c4cbad94a031e6d5e5, type: 2}
+  - {fileID: 8112287768725089534, guid: dab031641cc688f4297fe0a5f02b5c23, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

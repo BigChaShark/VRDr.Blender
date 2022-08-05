@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Poison
   m_EditorClassIdentifier: 
   potion: {fileID: 2979844998477420219, guid: f26ae46f418de0249bdddc77f87b5b7a, type: 3}
-  condition1: 0
-  condition2: 0
-  condition3: 1
+  condition1: 2
+  condition2: 1
+  condition3: 0

@@ -159,7 +159,7 @@ MonoBehaviour:
   _particleOn: {fileID: 1174431269000276814, guid: 8b6487c80aaf68b4794d68e96e3e2977,
     type: 3}
   potionType: 5
-  Damege: 10
+  Damege: 25
   ImpactRannge: 0
   speedReduce: 0
   Objtime: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0618917a6b8b11647862d43680071660, type: 3}
   m_Name: large
   m_EditorClassIdentifier: 
-  hp: 10
-  speed: 2
-  damage: 10
+  hp: 80
+  speed: 3
+  damage: 3
   score: 3
