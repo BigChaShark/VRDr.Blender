@@ -45,7 +45,12 @@ namespace Enemy.Scripts
         private float dmgFireTime;
         private float dmgFireTimeCount;
         private bool isFire = false;
-       
+
+        //Freeze Method
+        private float TimeFreez;
+        private float TimeFreezCount;
+        bool isFreez;
+
         //AnimetionBool
         public bool animwalk;
         
@@ -66,7 +71,6 @@ namespace Enemy.Scripts
         void Update()
         {
             target = heeTarget.transform;
-            Debug.Log(heeTarget.transform.position);
             var step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
             Vector3 targetDirection = target.position - transform.position;
@@ -87,6 +91,11 @@ namespace Enemy.Scripts
                StatusTimeCount += Time.deltaTime;
                Fire();
            }
+            if (isFreez)
+            {
+                TimeFreezCount += Time.deltaTime;
+                Freezer();
+            }
            if (enemyDeath)
             {
                 hp = 0;
@@ -126,9 +135,11 @@ namespace Enemy.Scripts
         {
             if (Vector3.Distance(transform.position, target.position) < destroyRange)
             {
+                Debug.Log("Is Plus Player");
+                GameManager.game.scoreForwin += 1;
                 Instantiate(death, transform.position, Quaternion.identity);
-                Destroy(gameObject);
                 GameManager.game.Hp -= Damage;
+                Destroy(gameObject);
             }
             if (Vector3.Distance(transform.position, target.position) < 100f&& openDebug==true)
             {
@@ -136,6 +147,8 @@ namespace Enemy.Scripts
             }
             if (hp<=0)
             {
+                Debug.Log("Is Plus");
+                GameManager.game.scoreForwin += 1;
                 GameManager.game.score += 1;
                 Destroy(gameObject);
             }
@@ -162,10 +175,12 @@ namespace Enemy.Scripts
             isNormal = true;
         }
 
-        public void IFreeze(int Speed , int Damage)
+        public void IFreeze(int Speed , int Damage ,float Time)
         {
+            TimeFreez = Time;
             isHit = true;
             isIce = true;
+            isFreez = true;
             hp -= Damage;
             rend.material = MatHitIce;
             speed = Speed;
@@ -206,6 +221,16 @@ namespace Enemy.Scripts
                 isFire = false;
                 dmgFireTimeCount = 0;
                 StatusTimeCount = 0;
+            }
+        }
+        private void Freezer()
+        {
+            if (TimeFreezCount>=TimeFreez)
+            {
+                ReSpeed();
+                isFreez = false;
+                TimeFreez = 0;
+                TimeFreezCount = 0;
             }
         }
 

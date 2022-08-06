@@ -132,10 +132,10 @@ MonoBehaviour:
   ImpactRannge: 0
   speedReduce: 1
   Objtime: 5
-  DMGTimeRate: 0.2
+  DMGTimeRate: 0.5
   StatusTime: 0
   wall: {fileID: 7300092782553521725}
-  Range: 15
+  Range: 9
 --- !u!64 &9222115477108135631
 MeshCollider:
   m_ObjectHideFlags: 0

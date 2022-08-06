@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager game;
     [SerializeField] private Slider sli;
     public int score;
+    public int scoreForwin;
     public int wave;
     public int enemyCount;
     [SerializeField] private Text ScoreText;
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
     public bool isClickReStart;
     public bool isClickReturnMenu;
     private bool playSound;
+    bool isWait;
+    bool isPlay;
     [SerializeField] private GameObject MenuUI;
     [SerializeField] private GameObject GameUI;
     [SerializeField] private GameObject WinUI;
@@ -36,13 +39,22 @@ public class GameManager : MonoBehaviour
         GameUI.SetActive(false);
         LoseUI.SetActive(false);
         MenuUI.SetActive(true);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (isClickStart)
         {
+            Debug.Log("Is Start");
+            if (isPlay==false)
+            {
+                Soundmanager.sM.PlaybackGround();
+                isPlay = true;
+            }
+            
             isClickReturnMenu = false;
             isClickReStart = false;
             sli.value = Hp;
@@ -53,7 +65,17 @@ public class GameManager : MonoBehaviour
             WaveText.text = $"Wave : {wave}";
             HpText.text = $"Hp : {Hp}";
         }
-        if (score >= winScore)
+        else 
+        {
+            if (isWait == false)
+            {
+                Soundmanager.sM.OnWait();
+                Debug.Log("Is Wait");
+                isWait = true;
+            }
+            
+        }
+        if (scoreForwin >= winScore)
         {
             if (playSound==false)
             {
@@ -84,6 +106,7 @@ public class GameManager : MonoBehaviour
         {
             Restart();
             isClickStart = true;
+            isPlay = false;
             LoseUI.SetActive(false);
             WinUI.SetActive(false);
             GameUI.SetActive(true);
@@ -94,6 +117,7 @@ public class GameManager : MonoBehaviour
         {
             Restart();
             isClickReStart = true;
+            isClickStart = false;
             LoseUI.SetActive(false);
             WinUI.SetActive(false);
             GameUI.SetActive(false);
@@ -104,10 +128,12 @@ public class GameManager : MonoBehaviour
     void Restart()
     {
         playSound = false;
+        isPlay = false;
         score = 0;
         Hp = FHp;
         wave = 0;
         enemyCount = 0;
+        scoreForwin = 0;
     }
     
 }

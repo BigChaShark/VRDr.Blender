@@ -25,7 +25,6 @@ public class Grab : MonoBehaviour
         UpdateGrabObJ();
         forceDir = transform.position - lastPosition;
         lastPosition = transform.position;
-        Debug.Log("x");
     }
 
     private void OnTriggerEnter(Collider other)

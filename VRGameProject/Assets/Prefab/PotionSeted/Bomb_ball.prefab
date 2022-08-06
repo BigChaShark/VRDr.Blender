@@ -159,14 +159,14 @@ MonoBehaviour:
   _particleOn: {fileID: 1174431269000276814, guid: 8b6487c80aaf68b4794d68e96e3e2977,
     type: 3}
   potionType: 5
-  Damege: 25
+  Damege: 20
   ImpactRannge: 0
   speedReduce: 0
   Objtime: 0
   DMGTimeRate: 0
   StatusTime: 0
   wall: {fileID: 3380640477770496231}
-  Range: 15
+  Range: 13
 --- !u!64 &2236409955178761228
 MeshCollider:
   m_ObjectHideFlags: 0

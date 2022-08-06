@@ -66,6 +66,7 @@ public class PotionManager : MonoBehaviour
         {
             bitMask = ~(1<<0)|~(1<<1)|~(1<<2)|(1<<3)|~(1<<4)|~(1<<5);
             rayHit = Physics.SphereCastAll(transform.position,Range,transform.forward,Range,bitMask);
+            
             switch (potionType)
             {
                 case Potion.Impact:
@@ -138,20 +139,12 @@ public class PotionManager : MonoBehaviour
                         var IDmg = hit.transform.GetComponent<IDamage>();
                         if (isBroke==false & IDmg!=null)
                         {
-                            IDmg.IFreeze(speedReduce,Damege);
+                            IDmg.IFreeze(speedReduce,Damege,Objtime);
                         }
                     }
                     isBroke = true;
                     if (time>=Objtime)
                     {
-                        foreach (var hit in rayHit)
-                        {
-                            var IDmg = hit.transform.GetComponent<IDamage>();
-                            if (IDmg!=null)
-                            {
-                                IDmg.ReSpeed();
-                            }
-                        }
                         Destroy(gameObject);
                     }
                     break;
@@ -207,5 +200,9 @@ public class PotionManager : MonoBehaviour
             Debug.Log("IsHit123");
             rigi.constraints = RigidbodyConstraints.FreezePositionZ;
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(transform.position,Range);
     }
 }

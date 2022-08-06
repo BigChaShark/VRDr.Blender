@@ -135,7 +135,7 @@ MonoBehaviour:
   DMGTimeRate: 1
   StatusTime: 7
   wall: {fileID: 8717291740947029837}
-  Range: 15
+  Range: 12
 --- !u!64 &7868367473729136130
 MeshCollider:
   m_ObjectHideFlags: 0

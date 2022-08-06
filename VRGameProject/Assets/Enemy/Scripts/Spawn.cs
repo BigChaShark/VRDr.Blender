@@ -49,7 +49,6 @@ namespace Enemy
         {
             if (GameManager.game.isClickReStart)
             {
-                Debug.Log("Is click Restart");
                 timecount = 0;
                 numEnemies = 0;
                 spawnRate = 0;

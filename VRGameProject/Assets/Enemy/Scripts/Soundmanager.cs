@@ -8,7 +8,7 @@ public class Soundmanager : MonoBehaviour
     
     
     [SerializeField]
-    public AudioSource _startSound,_switch1,_switch2,_switch3,_mixPotion,_click,_throwpotion,_backGround;
+    public AudioSource _startSound,_switch1,_switch2,_switch3,_mixPotion,_click,_throwpotion,_backGround,wait;
     
     
     public bool gamestarT= false,backgrounD= false,switcH1= false,switcH2= false,switcH3= false,miX= false,clicK= false,throwPotion = false;
@@ -22,39 +22,7 @@ public class Soundmanager : MonoBehaviour
     
     void Update()
     {
-        Debug.Log($"{gamestarT}{backgrounD}{switcH1}{switcH2}{switcH3}{miX}{clicK}{throwPotion}");
-        if (gamestarT == true)
-        {
-         Gamestart();   
-        }
-        if (backgrounD == true)
-        {
-            PlaybackGround();
-        } 
-        if (switcH1 == true)
-        {
-            pushBotton1();
-        } 
-        if (switcH2 == true)
-        {
-            pushBotton2();
-        } 
-        if (switcH3 == true)
-        {
-            pushBotton3();
-        } 
-        if (miX == true)
-        {
-            MixPoiton();
-        } 
-        if (clicK == true)
-        {
-            Onclick();
-        } 
-        if (throwPotion == true)
-        {
-            OnThrow();
-        }
+       
     }
 
     
@@ -65,6 +33,8 @@ public class Soundmanager : MonoBehaviour
      
     public void PlaybackGround()
     {
+        wait.Pause();
+        wait.Stop();
         _backGround.Play();
     }
 
@@ -91,6 +61,12 @@ public class Soundmanager : MonoBehaviour
     public void OnThrow()
     {
         _throwpotion.Play();
+    }
+    public void OnWait()
+    {
+        _backGround.Pause();
+        _backGround.Stop();
+        wait.Play();
     }
     
     

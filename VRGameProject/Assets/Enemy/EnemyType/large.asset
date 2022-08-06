@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: large
   m_EditorClassIdentifier: 
   hp: 80
-  speed: 3
+  speed: 2
   damage: 3
   score: 3

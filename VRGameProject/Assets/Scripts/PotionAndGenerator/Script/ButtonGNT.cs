@@ -94,6 +94,7 @@ namespace DefaultNamespace
                 {
                     GameManager.game.isClickReturnMenu = true;
                     Soundmanager.sM.Onclick();
+                    Soundmanager.sM.OnWait();
                     break;
                 }
             }
